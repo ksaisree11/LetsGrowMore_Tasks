@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be1c87c3f5.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="head.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Student Enrollment Form</title>
+
+</head>
+
+
+<body onselectstart="return ">
+    <nav onselectstart="return false">
+        <h1>Student Enrollment Form</h1>
+    </nav>
+    <form onselectstart="return false" class="enrollment-form">
+        <fieldset>
+            <legend>Enrollment Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Name"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Your Email"><br>
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" placeholder="Enter Your Website Link"><br>
+
+            <label for="imglink">Image link:</label>
+            <input type="url" id="imglink" placeholder="Enter Your Image Link"><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+            <input type="radio" name="gender" id="preferNotSay">Prefer not to say<br>
+
+            <label>Skills:</label>
+            <input type="checkbox" name="skills" id="html">HTML
+            <input type="checkbox" name="skills" id="css">CSS
+            <input type="checkbox" name="skills" id="js">JavaScript <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    <div onselectstart="return false" id="Enrolled-students" class="container2">
+        <h2><u>Enrolled Students</u></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="3">Description</th>
+                    <th>Photo</th>
+                </tr>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

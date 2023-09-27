@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+nav {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 2rem;
+    background-color: #F4DF4EFF;
+    cursor: default;
+}
+
+nav h1 {
+    color: #0a0202;
+}
+
+.enrollment-form {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid #101820FF;
+    border-radius: 5px;
+    background-color: #F6F6F6;
+    cursor: default;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color:  #436051;
+}
+
+.container2 {
+    max-width: 50%;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+legend {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 0px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 20px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: #F4DF4EFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container2 {
+    display: none;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 75%;
+    min-height: 500px;
+    padding-bottom: 50px;
+    cursor: default;
+
+}
+
+.container2 h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: #F4DF4EFF;
+}
+
+.container2 table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #3C6382;
+    background-color: #F6F6F6;
+    min-width: 50%;
+    max-width: 75%;
+}
+
+
+@media screen and (max-width:600px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    nav h1 {
+        text-align: center;
+        font-size: large;
+    }
+
+    .enrollment-form {
+        min-width: 90%;
+    }
+
+    .container2 table {
+
+        padding: -20px;
+        font-size: xx-small;
+        margin: 0 auto;
+    }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+
+    .enrollment-form {
+        display: none;
+    }
+
+    .container2 {
+        width: 100%;
+    }
+
+    table td {
+        width: 100%;
+    }
+
+    td button {
+        display: none;
+    }
+
+}
+
+th {
+    background-color: #F4DF4EFF;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+th,
+td {
+    border: 1px solid #bdc3c7;
+    padding: 5px;
+    text-align: left;
+    color: #34495e;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.details span {
+    font-weight: 600;
+    color: #436051;
+}
+
+td a {
+    text-decoration: none;
+    color: #5EAAA8;
+}
+
+td img {
+    width: 35mm;
+    height: 45mm;
+    object-fit: cover;
+}
+
+td p {
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+td button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 18px;
+    background-color: #F4DF4EFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: rgb(5, 5, 1);
+}
+
